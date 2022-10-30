@@ -4,14 +4,16 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Noto Serif TC', serif;
-    
 }
 
 header {
     background-color: #c4c4c4;
     width: 100%;
     padding: 1rem;
+
 }
+
+
 
 nav {
     background-color: #3b383c;
@@ -52,14 +54,21 @@ h3.headTitle {
 main {
     width: 100%;
     display: flex; 
+    min-height: 76vh;
+    background-image: url(./images/back.jpg);
 }
 
 section.left, section.right {
-    padding: 1rem;
+    padding: 1.5rem;
 }
+
+
+
+
 section.right h2 {
      font-size: 3rem; 
      text-align: center;
+     background-color: azure;
 }
 
 .active {
@@ -68,4 +77,36 @@ section.right h2 {
 
 span.spec {
     color: red;
+}
+
+section.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.right p{
+    margin: 1rem 0rem;
+    font-size: 20px;
+    border: 5px solid;
+    border-color: red;
+
+}
+
+section.right p, section.right h2{
+    background-color: wheat;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3.5rem;
+    background-color: cornflowerblue;
+    padding: 1rem 1rem;
+    font-size: 1.2rem;
+  }
+
+#footer a{
+    color: brown;
 }
