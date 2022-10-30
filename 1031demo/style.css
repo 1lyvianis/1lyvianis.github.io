@@ -1,0 +1,71 @@
+/* avoid the original paddings and margins in <body> tag */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Serif TC', serif;
+    
+}
+
+header {
+    background-color: #c4c4c4;
+    width: 100%;
+    padding: 1rem;
+}
+
+nav {
+    background-color: #3b383c;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding-left: 1.5rem;
+}
+
+nav ul li {
+    /* turn descendants into flex, so that all anchors can be padded*/
+    display: flex;
+}
+
+nav ul li a {
+    /* padding: 上下 左右 */
+    padding: 0.5rem 0.75rem;
+    color: gray;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    font-size: 1.25rem;
+}
+
+nav ul li a:hover {
+    background-color: pink;
+}
+
+h1.mainTitle {
+    font-size: 3rem;
+}
+
+h3.headTitle {
+    font-style: italic;
+}
+
+main {
+    width: 100%;
+    display: flex; 
+}
+
+section.left, section.right {
+    padding: 1rem;
+}
+section.right h2 {
+     font-size: 3rem; 
+     text-align: center;
+}
+
+.active {
+    color: beige;
+}
+
+span.spec {
+    color: red;
+}
