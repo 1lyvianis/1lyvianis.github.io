@@ -62,6 +62,9 @@ section.left, section.right {
     padding: 1.5rem;
 }
 
+section.left {
+    min-width: 70%;
+}
 
 
 
