@@ -13,8 +13,6 @@ header {
 
 }
 
-
-
 nav {
     background-color: #3b383c;
 }
@@ -65,8 +63,6 @@ section.left, section.right {
 section.left {
     min-width: 70%;
 }
-
-
 
 section.right h2 {
      font-size: 3rem; 
