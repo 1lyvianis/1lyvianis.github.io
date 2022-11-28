@@ -1,0 +1,10 @@
+All users:
+<ol>
+  {% for user in users_list %}
+  <li>
+    User <b>{{user.username}}</b>, with address <i>{{user.email}}</i>, posted
+    that：<br />
+    <u>{{user.textarea}}</u>
+  </li>
+  {% endfor %}
+</ol>
