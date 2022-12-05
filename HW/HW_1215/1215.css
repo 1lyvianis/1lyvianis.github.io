@@ -1,0 +1,29 @@
+* {
+    font-style: oblique;
+    /* can only apply one font style! */
+    font-weight: bolder;
+    font-size: 30px;
+    
+}
+
+[class="orange"]{
+    text-shadow: 90px 4px 3px orange;
+}
+
+#red {
+    text-shadow: 60px 16px 4px red;
+}
+
+.blue {
+    text-shadow: 30px 30px 5px blue;
+}
+
+ul li{
+    font-style: normal;
+    list-style: square; /* more efficient! */
+}
+
+ol li{
+    list-style: armenian;
+    font-style: normal;
+}
