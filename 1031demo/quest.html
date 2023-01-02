@@ -14,7 +14,8 @@
     </style>
     <link rel="shortcut icon" href="./images/sunset.jpg" />
     <link rel="bookmark" href="./images/sunset.jpg" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/quest.css" />
     <script
       src="https://kit.fontawesome.com/44dcc67986.js"
       crossorigin="anonymous"
@@ -38,10 +39,12 @@
           <a href="./index.html"><i class="fa-solid fa-hand-fist"></i> 首頁</a>
         </li>
         <li>
-          <a href="./comp.html"><i class="fa-solid fa-dragon"></i> 近期比賽</a>
+          <a href="./comp.html"><i class="fa-solid fa-dragon"></i> 近期活動</a>
         </li>
         <li>
-          <a href="./source.html"
+          <a
+            href="https://hackmd.io/@qNtfUxwZTaa-pI2VkGT0UA/SJcLEZtFj"
+            target="_blank"
             ><i class="fa-solid fa-folder-open"></i> 學習資源</a
           >
         </li>
@@ -51,20 +54,15 @@
           </a>
         </li>
         <li>
-          <a href="./photo.html"
+          <a
+            href="https://drive.google.com/drive/folders/13Jbl_uDbpphShdUTAx9rk8pBF6qB578h?usp=sharing"
+            target="_blank"
             ><i class="fa-solid fa-camera-retro"></i> 照片花絮</a
           >
         </li>
         <li>
           <a class="active" href="#"
             ><i class="fa-regular fa-comment"></i> 問題回報</a
-          >
-        </li>
-        <li>
-          <a
-            href="./quest.html"
-            style="position: absolute; right: 130px; color: aqua"
-            ><i class="fa-solid fa-door-open"></i> 登入</a
           >
         </li>
       </ul>
@@ -74,16 +72,10 @@
       <!-- flex item -->
       <section class="left">
         <div class="paragraph">
-          <h2 style="color: red">此區監修中</h2>
           <br />
-          <form action="" method="get">
+          <form action="./index.php" method="get">
             <label for="yourname">姓名</label>
-            <input
-              id="yourname"
-              type="text"
-              name="flag"
-              placeholder="請輸入真實姓名"
-            />
+            <input id="yourname" type="text" name="flag" required />
             <br />
             <label for="mail">信箱</label>
             <input id="mail" type="email" required />
@@ -94,12 +86,12 @@
             <textarea
               name="suggestion"
               id="suggestion"
-              cols="30"
-              rows="10"
+              cols="40"
+              rows="8"
               placeholder="謝謝您的拜訪!"
             ></textarea>
-            <br />
-            <label for="sub">訂閱電子報</label>
+            <br /><br />
+            <label for="sub">訂閱社團活動電子報</label>
             <input
               id="sub"
               type="checkbox"
@@ -107,19 +99,27 @@
               value="subscribed"
               checked
             />
-            <br />
-            <button type="submit">提交表單</button>
+            <br /><br />
+            <div class="but">
+              <input
+                type="button"
+                class="button"
+                onclick="location.href='./login.html'"
+                value="送出回饋"
+              />
+            </div>
+
             <br />
           </form>
         </div>
       </section>
       <!-- flex item -->
       <section class="right">
-        <h2>最新社團重要公告</h2>
-        <p>
-          ~~待補充~~待補充~~待補充~~待補充~~待補充~~待補充~~待補充~~待補充~~待補充~~待補充~~
-          待補充~~待補充~~待補充~~待補充~~待補充~~待補充~~待補充~~待補充~~待補充~~待補充~~待補充~~
-        </p>
+        <h2>社團重要公告</h2>
+        <ul>
+          <li>(11/24)請同學下周記得攜帶筆電來上課！</li>
+          <li class="new">(12/2)週五社團展，欲參加者請填寫表單。</li>
+        </ul>
       </section>
     </main>
     <footer id="footer">

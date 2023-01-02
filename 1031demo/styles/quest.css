@@ -1,0 +1,34 @@
+div.paragraph {
+  font-size: 2rem;
+  padding-left: 1rem;
+}
+
+input#sub {
+  transform: scale(2.5);
+}
+
+input#yourname, input#mail {
+  font-size: 20px;
+}
+
+div.but {
+  padding-left: 3rem;
+}
+div.but button {
+  scale: 2;
+}
+
+input.button {
+  scale: 2;
+}
+
+textarea {
+  font-size: 40px;
+}/*# sourceMappingURL=quest.css.map */
+
+@media screen and (max-width: 550px) {
+  textarea {
+    width: 100%;
+    height: 20%;
+  }
+}

@@ -1,0 +1,20 @@
+section.left {
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+input#file {
+    padding-left: 3.5%;
+    transform: scale(1.5);
+}
+.but {
+    padding-left: 2%;
+}
+.but input {
+    
+    transform: scale(2);
+}
+
+input#yourname {
+    font-size: 20px;
+  }
+  

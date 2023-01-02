@@ -1,0 +1,146 @@
+/* avoid the original paddings and margins in <body> tag */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'myFont','Noto Serif TC', serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(..//images/JasonHandwriting1.ttf);
+}
+
+
+header {
+    background-color: #c4c4c4;
+    width: 100%;
+    padding: 1rem;
+    h1.mainTitle {
+        font-size: 3.5rem;
+    }
+    h3.headTitle {
+        font-style: italic;
+        font-size: 2rem;
+    }
+    span.spec {
+        color: red;
+    }
+}
+
+nav {
+    background-color: #3b383c;
+    ul {
+        display: flex;
+        list-style-type: none;
+        padding-left: 1.5rem;
+        li{
+            
+            /* turn descendants into flex, so that all anchors can be padded*/
+            display: flex;
+            a {
+                /* padding: 上下 左右 */
+                padding: 0.5rem 0.9rem;
+                color: gray;
+                text-decoration: none;
+                transition: all 0.25s ease;
+                font-size: 1.75rem;
+                &:hover {
+                    background-color: pink;
+                }
+                
+                &#login {
+                    flex: 2 1 400px;
+                }
+            }
+            
+        }
+    }
+}
+
+
+main{
+    width: 100%;
+    display: flex; 
+    flex-wrap: wrap;
+    min-height: 76vh;
+    background-image: url(../images/back.jpg);
+}
+
+section{
+    &.left{
+        min-width: 70%;
+        flex: 4 1 550px;
+        padding: 1.5rem;
+    }
+    &.right{
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1 1 250px;
+        
+        h2 {
+            font-size: 3rem; 
+            text-align: center;
+            background-color: wheat;
+        }
+
+        ul {
+            margin: 1rem 0rem;
+            font-size: 40px;
+            border: 5px solid;
+            border-color: red;
+            background-color: wheat;
+            list-style-type: none;
+            li {
+                margin-bottom: 2.5rem;
+                .new {
+                    text-decoration-color: cadetblue;
+                    color: cadetblue;
+                }
+            }
+        }
+
+    }
+}
+
+
+.active {
+    color: beige;
+}
+
+
+
+
+#footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 3.5rem;
+    background-color: cornflowerblue;
+    padding: 1rem 1rem;
+    font-size: 1.2rem;
+    margin: auto;
+    a {
+        color: brown;
+    }
+  }
+
+
+@media screen and (max-width : 860px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width : 550px) {
+    #maintain {
+        width: 100%;
+        height: 20%;
+    }
+}

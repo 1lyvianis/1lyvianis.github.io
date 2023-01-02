@@ -1,0 +1,39 @@
+.paragraph ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    line-height: 8rem;
+}
+
+.paragraph ul li{
+    padding-left: 20px;
+    padding-top: 30px;
+    font-size: 3.5rem;
+    display: flex;
+    flex-direction: row;
+    border-style: groove;
+    border-radius: 30px;
+}
+
+.piclink {
+    justify-content: center;
+    width: 600px;
+    height: 400px;
+}
+
+.paragraph ul li img{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    justify-content: center;
+    width: 600px;
+    height: 400px;
+}
+
+.paragraph ul li a.textlink{
+    padding-top: 6.5rem;
+    padding-left: 8%;
+    justify-content: center;
+    text-decoration: none;
+}

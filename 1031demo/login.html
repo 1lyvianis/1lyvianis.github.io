@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,6 +7,7 @@
     <meta name="robots" content="index, follow" />
     <meta name="description" content="MDHS資訊社專用網頁" />
     <meta name="author" content="410410083 洪子翔" />
+    <meta http-equiv="refresh" content="4;url=./index.html" />
     <base target="_self" />
     <!--google fonts must go before css!-->
     <style>
@@ -14,17 +15,81 @@
     </style>
     <link rel="shortcut icon" href="./images/sunset.jpg" />
     <link rel="bookmark" href="./images/sunset.jpg" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
     <script
       src="https://kit.fontawesome.com/44dcc67986.js"
       crossorigin="anonymous"
     ></script>
-    <title>Yearning login challenge</title>
+    <title>Yearning</title>
   </head>
   <body>
-    <form action="get">
-      <label for="acc">帳號</label>
-      <input type="" />
-    </form>
+    <!--header-->
+    <header>
+      <h1 class="mainTitle"><i class="fa-solid fa-hand-fist"></i> Yearning</h1>
+      <h3 class="headTitle">
+        <span class="spec">Y</span>ou earn through l<span class="spec"
+          >earning</span
+        >.
+      </h3>
+    </header>
+    <!--nav-->
+    <nav>
+      <ul>
+        <li>
+          <a class="active" href="#"
+            ><i class="fa-solid fa-hand-fist"></i> 首頁</a
+          >
+        </li>
+        <li>
+          <a href="./comp.html"><i class="fa-solid fa-dragon"></i> 近期活動</a>
+        </li>
+        <li>
+          <a
+            href="https://hackmd.io/@qNtfUxwZTaa-pI2VkGT0UA/SJcLEZtFj"
+            target="_blank"
+            ><i class="fa-solid fa-folder-open"></i> 學習資源</a
+          >
+        </li>
+        <li>
+          <a href="./upload.html">
+            <i class="fa-regular fa-rectangle-list"></i> 上傳資料
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://drive.google.com/drive/folders/13Jbl_uDbpphShdUTAx9rk8pBF6qB578h?usp=sharing"
+            ><i class="fa-solid fa-camera-retro"></i> 照片花絮</a
+          >
+        </li>
+        <li>
+          <a href="./quest.html"
+            ><i class="fa-regular fa-comment"></i> 問題回報</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <!-- flex container -->
+    <main>
+      <!-- flex item -->
+      <section class="left">
+        <br />
+        <h1 style="color: red">已送出！</h1>
+        <br /><br />
+        <h2>請稍後...將重新導向至首頁。</h2>
+      </section>
+      <!-- flex item -->
+      <section class="right">
+        <h2>社團重要公告</h2>
+        <ul>
+          <li>(11/24)請同學下周記得攜帶筆電來上課！</li>
+          <li class="new">(12/2)週五社團展，欲參加者請填寫表單。</li>
+        </ul>
+      </section>
+    </main>
+    <footer id="footer">
+      Contact us :
+      <a href="https://www.facebook.com/mdbrainstorm/">明道中學資訊社</a>
+    </footer>
   </body>
 </html>
