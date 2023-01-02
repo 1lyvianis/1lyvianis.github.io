@@ -37,3 +37,12 @@
     justify-content: center;
     text-decoration: none;
 }
+@media screen and (max-width: 1485px) {
+    #maintain {
+      width: 100%;
+      height: 20%;
+    }
+    .paragraph ul li{
+        flex-direction: column;
+    }
+  }/*# sourceMappingURL=style.css.map */
